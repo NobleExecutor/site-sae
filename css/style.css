@@ -92,4 +92,24 @@ header div a {
 
 section.sae {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+div.container-sae {
+    background-color: #A93F55;
+    padding: 30px;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px #711d21;
+    color: #fff;
+}
+
+div.ligne1,
+div.ligne2 {
+    display: flex;
+    flex-direction: row;
 }
