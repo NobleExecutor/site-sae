@@ -106,10 +106,36 @@ div.container-sae {
     border-radius: 20px;
     box-shadow: 8px 8px 5px #711d21;
     color: #fff;
+    white-space: normal;
+    overflow-wrap: break-word;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
-div.ligne1,
-div.ligne2 {
+div.ligne {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+div.ligne-bottom {
     display: flex;
     flex-direction: row;
+}
+
+.plus-btn {
+    color: #fff;
+    background-color: #F2545B;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.plus-btn:hover {
+    background-color: #EF767A;
+    text-decoration: underline;
 }
