@@ -1,7 +1,7 @@
 * {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html {
@@ -9,18 +9,17 @@ html {
 }
 
 .titre-fancy {
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
+    font-family: "BBH Sans Bartle", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "MORF" 15,
-        "SHLN" 50;
+    color: #fff;
+    font-size: 7rem;
+    margin-top: auto;
 }
 
 body {
     margin: 0;
-    background-color: #DDD8C4;
+    background-color: #343A40;
     min-height: 100vh;
 }
 
@@ -34,7 +33,7 @@ header {
 header div {
     width: 350px;
     height: 100px;
-    background-color: #69A297;
+    background-color: #495057;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,27 +48,10 @@ header div a {
 
 .first {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-}
-
-.info-container {
-    min-height: 500px;
-    min-width: 500px;
-    background-color: #50808E;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-container h1 {
-    font-size: 3rem;
-}
-
-.info-container p {
-    color: #fff;
 }
 
 .btn-sae {
@@ -81,10 +63,10 @@ header div a {
     margin-top: auto;
     padding: 25px;
     margin-bottom: 5%;
-    background-color: #84B59F;
+    background-color: #6C757D;
     border-radius: 50px;
     transition: transform .4s;
-    box-shadow: 8px 8px 5px #A3C9A8;
+    box-shadow: 6px 6px 5px #8b9298;
 }
 
 .btn-sae:hover {
@@ -99,11 +81,11 @@ section.sae {
 }
 
 div.container-sae {
-    background-color: #A93F55;
+    background-color: #495057;
     padding: 30px;
     margin: 60px;
     border-radius: 20px;
-    box-shadow: 8px 8px 5px #711d21;
+    box-shadow: 8px 8px 5px #fff;
     color: #fff;
     white-space: normal;
     overflow-wrap: break-word;
@@ -119,7 +101,6 @@ div.ligne-bottom {
 
 .plus-btn {
     color: #fff;
-    background-color: #84B59F;
     text-decoration: none;
     padding: 10px;
     margin: auto;
@@ -128,6 +109,7 @@ div.ligne-bottom {
 }
 
 .plus-btn:hover {
-    background-color: #EF767A;
+    color: #CED4DA;
+    background-color: #6C757D;
     text-decoration: underline;
 }
