@@ -20,7 +20,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #19323C;
+    background-color: #DDD8C4;
     min-height: 100vh;
 }
 
@@ -34,15 +34,16 @@ header {
 header div {
     width: 350px;
     height: 100px;
-    background-color: #F3F7F0;
+    background-color: #69A297;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
+    color: #fff;
 }
 
 header div a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -56,7 +57,7 @@ header div a {
 .info-container {
     min-height: 500px;
     min-width: 500px;
-    background-color: #A93F55;
+    background-color: #50808E;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -80,10 +81,10 @@ header div a {
     margin-top: auto;
     padding: 25px;
     margin-bottom: 5%;
-    background-color: #F2545B;
+    background-color: #84B59F;
     border-radius: 50px;
     transition: transform .4s;
-    box-shadow: 8px 8px 5px #711d21;
+    box-shadow: 8px 8px 5px #A3C9A8;
 }
 
 .btn-sae:hover {
@@ -99,7 +100,7 @@ section.sae {
     max-width: 100vw;
 }
 
-div.container-sae {
+//div.container-sae {
     background-color: #A93F55;
     padding: 30px;
     margin: 60px;
@@ -111,6 +112,61 @@ div.container-sae {
     min-height: 250px;
     display: flex;
     flex-direction: column;
+}
+
+div.container-sae {
+    color: #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    transition: transform 0.3s;
+}
+
+div.container-sae:hover {
+    transform: scale(1.6);
+    
+}
+
+// clip path
+
+.ligne,
+.ligne-bottom {
+    margin: 3%;
+}
+
+.sae1 {
+    background-color: #F40202;
+}
+.sae2 {
+    background-color: #01FF00;
+}
+.sae3 {
+    background-color: #FFFF12;
+}
+.sae4 {
+    background-color: #FF6400;
+}
+.sae5 {
+    background-color: #0000ED;
+}
+.sae6 {
+    background-color: #FF00FE;
+}
+.sae7 {
+    background-color: #632A9F;
+}
+.sae8 {
+    background-color: #000;
+}
+.sae9 {
+    background-color: #642701;
+}
+.sae10 {
+    background-color: #FF6400;
 }
 
 div.ligne {
@@ -127,7 +183,7 @@ div.ligne-bottom {
 
 .plus-btn {
     color: #fff;
-    background-color: #F2545B;
+    background-color: #84B59F;
     text-decoration: none;
     padding: 10px;
     margin: auto;
