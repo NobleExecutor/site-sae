@@ -8,4 +8,22 @@
 body {
     margin: 0;
     background-color: #343A40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.return {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #6C757D;
+    transition: .4s;
+}
+
+.return:hover {
+    background-color: #343A40;
+    text-decoration: underline;
 }
