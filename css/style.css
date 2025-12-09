@@ -127,3 +127,8 @@ div.ligne-bottom {
     background-color: #495057;
     text-decoration: underline;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+}
