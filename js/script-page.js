@@ -1,9 +1,26 @@
-function loop(path) {
-    let result = "<h3>";
-    for (let ac in path) {
-        result += "<a href='#' target='_blank'>" + ac + " - " + path[ac] + "</a><br>";
-    }
-    return result += "</h3>";
+let v_sae = SAE[sae];
+let v_ac = SAE[sae].AC;
+let ac_contenu = "";
+let v_res = SAE[sae].ressources;
+let res_contenu = "";
+
+for (let ac in v_ac) {
+    ac_contenu += ac + " - " + v_ac[ac] + "<br>";
 }
 
-document.querySelector("main").innerHTML = "<div class='container'><h1 align='center'>" + sae + " (Semestre " + SAE[sae].semestre + ")</h1><h2 align='center'>" + SAE[sae].titre + "</h2><p>Description: " + SAE[sae].description + "</p><p>Compétence(s): " + SAE[sae].compétences + "</p><p>Apprentissages critiques couverts: " + loop(SAE[sae].AC) + "</p><p>Liste des ressources mobilisées: " + loop(SAE[sae].ressources) + "</p></div>";
+
+for (let res in v_res) {
+    res_contenu += res + " - " + v_res[res] + "<br>";
+}
+
+
+let contenu = `<div class='container'>
+                    <h1 align='center'>${sae} (Semestre ${v_sae.semestre})</h1>
+                    <h2 align='center'${v_sae.titre}</h2>
+                    <p>Description: ${v_sae.description}</p>
+                    <p>Compétence(s): ${v_sae.compétences}</p>
+                    <p>Apprentissages critiques couverts: ${ac_contenu}</p>
+                    <p>Liste des ressources mobilisées: ${res_contenu}</p>
+               </div>`;
+
+document.querySelector("main").innerHTML = contenu;
