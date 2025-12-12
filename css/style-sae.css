@@ -54,3 +54,16 @@ main {
 .underline {
     text-decoration: underline;
 }
+
+body {
+    animation: fondu 1.5s linear;
+}
+
+@keyframes fondu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
