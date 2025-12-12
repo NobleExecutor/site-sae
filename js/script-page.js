@@ -5,7 +5,7 @@ let v_res = SAE[sae].ressources;
 let res_contenu = "<br>";
 
 for (let ac in v_ac) {
-    ac_contenu += "<a class='ac-btn' href='#' target='_blank'>" + ac + " - " + v_ac[ac] + "</a><br>";
+    ac_contenu += "<a class='ac-btn' href='../assets/" + sae + ".pdf' target='_blank'>" + ac + " - " + v_ac[ac] + "</a><br>";
 }
 
 for (let res in v_res) {
