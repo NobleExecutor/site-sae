@@ -1,3 +1,5 @@
+document.title = sae;
+
 // Initialisation de variables
 let v_sae = SAE[sae];
 let v_ac = SAE[sae].AC;
