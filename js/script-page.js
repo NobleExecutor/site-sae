@@ -5,7 +5,7 @@ let ac_contenu = "<br>";
 let v_res = SAE[sae].ressources;
 let res_contenu = "<br>";
 
-// Boucles pour affichage des AC et ressources
+// Boucles pour l'affichage des AC et ressources
 for (let ac in v_ac) {
     ac_contenu += "<a class='ac-btn' href='../assets/" + sae + ".pdf' target='_blank'>" + ac + " - " + v_ac[ac] + "</a><br>";
 }
@@ -14,6 +14,7 @@ for (let res in v_res) {
     res_contenu += res + " - " + v_res[res] + "<br>";
 }
 
+// Utilisation de littéraux de gabarits pour une meilleure lisibilité
 let contenu = `<div class='container'>
                     <h1 align='center'>${sae} (Semestre ${v_sae.semestre})</h1>
                     <h2 align='center'>${v_sae.titre}</h2>
