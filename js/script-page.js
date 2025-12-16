@@ -1,3 +1,4 @@
+// Initialisation du titre de la page au numéro de la SAE passé en paramètre
 document.title = sae;
 
 // Initialisation de variables
