@@ -1,3 +1,4 @@
+// Boucle pour l'affichage des SAE
 for (let num in SAE) {
     let v_sae = SAE[num];
     let contenu = `<div class='container-sae' id='${num}'>
