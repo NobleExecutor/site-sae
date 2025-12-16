@@ -130,5 +130,13 @@ div.ligne-bottom {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #495057;
+    min-height: fit-content;
+    padding: 20px;
+}
+
+#iut {
+    height: 80px;
 }
