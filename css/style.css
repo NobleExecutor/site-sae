@@ -106,7 +106,7 @@ header div a:hover {
     width: 100%;
     background-image: conic-gradient(
         from var(--angle),
-        transparent,
+        transparent 70%,
         white
     );
     top: 50%;
