@@ -13,6 +13,42 @@ body {
     align-items: center;
 }
 
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.return::before,
+.return::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 70%,
+        white
+    );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: rotate 1.5s infinite linear;
+}
+
 .return {
     color: #fff;
     text-decoration: none;
@@ -21,11 +57,7 @@ body {
     border-radius: 10px;
     background-color: #6C757D;
     transition: .4s;
-}
-
-.return:hover {
-    background-color: #343A40;
-    text-decoration: underline;
+    position: relative;
 }
 
 div.container {
