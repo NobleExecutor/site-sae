@@ -20,7 +20,6 @@ html {
 body {
     margin: 0;
     background-color: #343A40;
-    min-height: 100vh;
 }
 
 header {
@@ -29,6 +28,7 @@ header {
     align-items: center;
     padding: 30px;
     animation: fondu 1.5s linear;
+    min-height: 10vh;
 }
 
 header div {
@@ -55,7 +55,7 @@ header div a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     animation: fondu 1.5s linear;
 }
 
